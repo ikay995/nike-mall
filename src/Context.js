@@ -8,7 +8,7 @@ function ContextProvider({children}) {
     const [cartItems, setCartItems] = useState([])
     
     useEffect(()=> {
-        fetch("images.json", {
+        fetch("http://ikay995.github.io/nike-mall/images.json", {
             headers : { 
               'Content-Type': 'application/json',
               'Accept': 'application/json'
