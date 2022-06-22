@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react"
 
+
 const Context = React.createContext()
 
 function ContextProvider({children}) {
@@ -7,7 +8,7 @@ function ContextProvider({children}) {
     const [cartItems, setCartItems] = useState([])
     
     useEffect(()=> {
-        fetch("./nike-mall/images.json", {
+        fetch("../public/images.json", {
             headers : { 
               'Content-Type': 'application/json',
               'Accept': 'application/json'
